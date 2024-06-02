@@ -6,19 +6,28 @@ import {
   PAUSE,
   PERSIST,
   persistStore,
+  persistReducer,
   PURGE,
   REGISTER,
   REHYDRATE,
 } from 'redux-persist';
 import rootReducers from './root-reducer';
 import rootSaga from './root-saga';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const sagaMiddleware = createSagaMiddleware();
 const logger = createLogger({
   // options
 });
+const persistConfig = {
+  storage: AsyncStorage,
+  key: 'Sellonboard',
+  whitelist: ['loginReducer'],
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducers);
 export const store = configureStore({
-  reducer: rootReducers,
+  reducer: persistedReducer,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {

@@ -1,4 +1,10 @@
 export const RouterName = {
-  mainTab: 'MainTab',
-  loginPage: 'LoginPage',
+  authStack: 'AuthStack',
+  bottomStack: 'BottomStack',
+  drawerNavigator: 'drawerNavigator',
+  signInPage: 'SignInPage',
+  overviewPage: 'OverViewPage',
+  salesPage: 'SalePage',
+  shipmentPage: 'ShipmentPage',
+  paymentPage: 'PaymentPage',
 };

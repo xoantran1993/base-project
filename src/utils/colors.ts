@@ -1,0 +1,35 @@
+export const Colors = {
+  // black
+  black: '#000000',
+  black8A: '#0000008a',
+  blackD9: '#000000d9',
+  almostBlackGrey: '#121212',
+  // white
+  white: '#FFFFFF',
+  whiteF9F9FD: '#f9f9fd',
+  whiteF0F0F0: '#f0f0f0',
+  transparent: 'transparent',
+  lightGrey: '#D1D1D1',
+  darkGrey: '#787878',
+  lighterGrey: '#E5E5E5',
+  lightestGrey: '#F7F7F7',
+  // grey
+  midGrey: '#ABABAB',
+  greyd9d9d9: '#D9D9D9',
+  grey00000073: '#00000073',
+  // red
+  baseRed: '#CC1000',
+  redE1092A: '#E1092A',
+  // blue
+  blueDart: '#6C5DD3',
+  blue1877F2: '#1877F2',
+  black06: 'rgba(0,0,0,.06)',
+  // pink
+  pinkF6e1e4: '#f6e1e4',
+  // green
+  greenF0faf0: '#f0faf0',
+  green65b569: '#65b569',
+  // orange
+  orangeFfe4bc: '#ffe4bc',
+  orangeF46615: '#f46615',
+};

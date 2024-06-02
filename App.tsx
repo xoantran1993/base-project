@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {Provider} from 'react-redux';
@@ -6,7 +7,7 @@ import {
   NavigationContainer,
   createNavigationContainerRef,
 } from '@react-navigation/native';
-import MainStackNavigator from './src/navigations/main-stack-navigation';
+import MainStackNavigator from './src/navigations';
 
 export const navigationRef = createNavigationContainerRef();
 

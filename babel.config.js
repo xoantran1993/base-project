@@ -11,5 +11,6 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js'], // Các loại đuôi file cần xem xét
       },
     ],
+    ['react-native-reanimated/plugin'],
   ],
-}
+};
